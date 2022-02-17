@@ -1,6 +1,8 @@
 :root {
     --black: #222;
     --white: #ffffff;
+    --red: #de1e23;
+    --green: #3aa335;
     --midnightblue: #191970;
     --magenta: #ff00ff;
     --yellow: #ffff00;
@@ -8,7 +10,7 @@
     --cyan: #00ffff;
     --forestgreen: #228822;
     --greenwich: #465b52;
-    --grey: #a9a9a9;
+    --grey: #e3e6f3;
     --lime: #00ff00;
     --teal: rgba(0, 128, 128);
     --navy: rgba(0, 0, 128);
@@ -64,8 +66,97 @@ body {
     width: 100%;
 }
 
+
+/* Header section*/
+
 .logo {
+    width: 10em;
+    height: 4em;
+    margin: 6px;
+    border-radius: 5%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: var(--green);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 30%;
+    height: 2px;
+    background: var(--green);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/* MAIN SECTION */
+
+#main {
+    background-image: url("image/cover.jpg");
+    height: 90vh;
     width: 100%;
-    height: 50%;
-    justify-self: start;
+    background-size: cover;
+    background-position: top 1% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#main h4 {
+    padding-bottom: 15px;
+}
+
+#main h1 {
+    color: var(--forestgreen);
+}
+
+#main button {
+    background-image: url("image/button.png");
+    background-color: transparent;
+    color: var(--forestgreen);
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
 }
