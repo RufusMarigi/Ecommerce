@@ -6,7 +6,7 @@
     --midnightblue: #191970;
     --magenta: #ff00ff;
     --yellow: #ffff00;
-    --gold: #daa520;
+    --gold: #b47c4b;
     --cyan: #00ffff;
     --forestgreen: #228822;
     --greenwich: #465b52;
@@ -17,6 +17,7 @@
     --persiangreen: #00af8f;
     --crimson: #d44443;
     --brown: #800000;
+    --blue: #1167b1;
 }
 
 * {
@@ -50,7 +51,7 @@ h6 {
 
 p {
     font-size: 16px;
-    color: var(--greenwich);
+    color: var(--persiangreen);
     margin: 15px 0 20px 0;
 }
 
@@ -159,4 +160,102 @@ body {
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
+}
+
+
+/*FEATURE SECTION*/
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--green);
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:nth-child(2) {
+    border: 1px solid var(--crimson);
+}
+
+#feature .fe-box:nth-child(3) {
+    border: 1px solid var(--persiangreen);
+}
+
+#feature .fe-box:nth-child(4) {
+    border: 1px solid var(--blue);
+}
+
+#feature .fe-box:nth-child(5) {
+    border: 1px solid var(--midnightblue);
+}
+
+#feature .fe-box:nth-child(6) {
+    border: 1px solid var(--gold);
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px var(--green);
+}
+
+#feature .fe-box:hover:nth-child(2) {
+    box-shadow: 10px 10px 54px var(--crimson);
+}
+
+#feature .fe-box:hover:nth-child(3) {
+    box-shadow: 10px 10px 54px var(--persiangreen);
+}
+
+#feature .fe-box:hover:nth-child(4) {
+    box-shadow: 10px 10px 54px var(--blue);
+}
+
+#feature .fe-box:hover:nth-child(5) {
+    box-shadow: 10px 10px 54px var(--midnightblue);
+}
+
+#feature .fe-box:hover:nth-child(6) {
+    box-shadow: 10px 10px 54px var(--gold);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: var(--white);
+    background-color: var(--green);
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: var(--crimson);
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: var(--persiangreen);
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: var(--blue);
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: var(--midnightblue);
+}
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: var(--gold);
 }
