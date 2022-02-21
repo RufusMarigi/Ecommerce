@@ -35,10 +35,15 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li>
-                <a href="cart.html"><i class="fi-xwluxx-shopping-bag-wide"></i></a>
+            <li id="bag">
+                <a href="cart.html"><i class="fi-xwluxl-shopping-bag-wide"></i></a>
             </li>
+            <a href="#" id="close"><i class="fi-xwluxl-times-wide"></i></a>
         </ul>
+        <div id="mobile">
+            <a href="cart.html"><i class="fi-xwluxm-shopping-bag-wide"></i></a>
+            <i id="bar" class="fi-xnsuxm-three-bars-solid"></i>
+        </div>
     </header>
 
     <!--MAIN SECTION-->
@@ -458,20 +463,87 @@
     </section>
 
     <!--Footer Section-->
-    <footer class="section-p1">
+    <footer>
+        <!--Footer Contact us section-->
         <div class="col">
-            <img src="image/logo.jpg" alt="Digital Margik" />
+            <img src="image/logo.jpg" class="footerLogo" alt="Digital Margik" />
             <h4>Contact</h4>
-            <p><strong>Location:</strong> Nairobi, Kenya</p>
+            <p><strong>Location: &nbsp </strong> Nairobi, Kenya</p>
             <p>
-                <strong>Hours:</strong> <time datetime="05:00">5:00am</time> to
+                <strong>Phone: &nbsp </strong
+          ><span class="tel">+254 792-839-938</span>
+        </p>
+        <p>
+          <strong>Hours: &nbsp </strong> <time datetime="05:00">5:00am</time> to
                 <time datetime="23:00">11:00pm</time>, Monday - Saturday.
             </p>
+
+            <div class="follow col">
+                <h4>Follow us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/?hl=en">
+                        <img src="svg/icons8-instagram.svg" class="iconItem" alt="Twitter" />
+                    </a>
+
+                    <a href="https://twitter.com/?lang=en">
+                        <img src="svg/icons8-twitter.svg" class="iconItem" alt="Twitter" />
+                    </a>
+
+                    <a href="https://youtube.com/">
+                        <img src="svg/icons8-youtube.svg" class="iconItem" alt="Twitter" />
+                    </a>
+
+                    <a href="https://www.facebook.com/">
+                        <img src="svg/icons8-facebook.svg" class="iconItem" alt="Twitter" />
+                    </a>
+                </div>
+            </div>
         </div>
+
+        <!--Footer About us section-->
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <!--Footer My Account Section-->
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <!--Footer Install App Section-->
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="image/pay/app.jpg" alt="App Store" />
+                <img src="image/pay/play.jpg" alt="Google Play" />
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="image/pay/pay.png" alt="Payment Gateways" />
+        </div>
+
+        <!--Copyright Section-->
+        <div class="copyright">
+            <p>
+                <small>content &copy; 2022, Marigi wa Kinuthia - Africa Royal
+            Market</small
+          >
+        </p>
+      </div>
     </footer>
 
     <!--JAVASCRIPT Link-->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
