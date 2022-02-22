@@ -190,8 +190,13 @@ body {
     padding-bottom: 15px;
 }
 
+#main h2 {
+    padding-bottom: 15px;
+}
+
 #main h1 {
     color: var(--forestgreen);
+    padding-bottom: 15px;
 }
 
 #main button {
@@ -224,6 +229,10 @@ body {
     border: 1px solid var(--green);
     border-radius: 4px;
     margin: 15px 0;
+}
+
+#feature .fe-box h6 {
+    font-size: 20px;
 }
 
 #feature .fe-box:nth-child(2) {
@@ -393,18 +402,19 @@ body {
     text-align: center;
     background-image: linear-gradient( to bottom, rgba(225, 225, 228, 0.5), rgba(10, 10, 10, 0.9)), url("image/banner/banner3.jpg");
     width: 100%;
-    height: 70vh;
+    height: 52vh;
     background-size: cover;
-    background-position: top 28% right 0;
+    background-position: top 38% right 0;
+    transition: 0.2s;
 }
 
 #banner h4 {
-    color: var(--aqua);
+    color: var(--white);
     font-size: 40px;
 }
 
 #banner h2 {
-    color: var(--aqua);
+    color: var(--white);
     font-size: 60px;
     font-weight: 700;
     padding: 10px 0;
@@ -418,18 +428,23 @@ button.banner-btn {
     font-size: 18px;
     font-weight: 600;
     padding: 15px 30px;
-    color: var(--black);
-    background: var(--aqua);
+    color: var(--white);
+    background: transparent;
+    border: 1px solid var(--white);
     border-radius: 8px;
     cursor: pointer;
     bottom: none;
     outline: none;
-    transition: 0.2s;
+}
+
+#banner:hover button {
+    color: var(--green);
+    border: 2px solid var(--white);
 }
 
 #banner button:hover {
-    background-color: var(--black);
-    color: var(--aqua);
+    color: var(--green);
+    border: 3px solid var(--green);
 }
 
 
@@ -446,7 +461,7 @@ button.banner-btn {
     flex-direction: column;
     justify-content: first baseline;
     align-items: flex-start;
-    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.09), rgba(164, 49, 34, 0.2)), url("image/banner/banner18.jpg");
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.01), rgba(164, 49, 34, 0.01)), url("image/banner/banner18.jpg");
     min-width: 740px;
     height: 58vh;
     background-size: cover;
@@ -456,7 +471,7 @@ button.banner-btn {
 }
 
 #sm-banner .banner-box2 {
-    background-image: linear-gradient( to bottom, rgb(255, 255, 255, 0.4), rgba(164, 49, 34, 0.2)), url("image/banner/banner20.jpg");
+    background-image: linear-gradient( to bottom, rgb(255, 255, 255, 0.1), rgba(164, 49, 34, 0.01)), url("image/banner/bannerbox2.jpg");
 }
 
 #sm-banner h4 {
@@ -498,7 +513,7 @@ button.banner-btn {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url("image/banner/banner23.jpg");
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.5)), url("image/banner/banner23.jpg");
     min-width: 30%;
     height: 35vh;
     background-position: top 15% left 100%;
@@ -514,7 +529,7 @@ button.banner-btn {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0)), url("image/banner/banner22.jpg");
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url("image/banner/banner22.jpg");
     min-width: 30%;
     height: 35vh;
     background-position: top 38% left 100%;
@@ -530,7 +545,7 @@ button.banner-btn {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0)), url("image/banner/banner19.jpg");
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url("image/banner/banner19.jpg");
     min-width: 30%;
     height: 35vh;
     background-position: top 15% left 100%;
@@ -609,7 +624,7 @@ button.banner-btn {
 /*--Footer Section--*/
 
 footer {
-    padding: 40px 80px;
+    padding: 40px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -686,7 +701,10 @@ footer .copyright {
 
 /*START MEDIA QUERY*/
 
-@media (max-width: 799px) {
+@media (max-width: 768px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
     /* NAVBAR SECTION */
     #navbar {
         display: flex;
@@ -735,5 +753,69 @@ footer .copyright {
         height: 70vh;
         padding: 0px 40px;
         background-position: top 30% right 40%;
+    }
+    #main .hero-text {
+        text-align: left;
+        position: absolute;
+        left: 1%;
+        bottom: 50%;
+    }
+    /*FEATURED SECTION */
+    #feature {
+        justify-content: center;
+    }
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+    .section-p1 .product-container {
+        justify-content: center;
+    }
+    .section-p1 .product {
+        margin: 15px;
+    }
+    #banner {
+        height: 30vh;
+    }
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+        background-position: top 75% left 100%;
+    }
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+        background-image: linear-gradient( to bottom, rgb(255, 255, 255, 0), rgba(73, 26, 20, 0)), url(image/banner/bannerbox2.jpg);
+        min-width: 100%;
+        height: 30vh;
+        background-position: bottom 68% left 100%;
+    }
+    #banner3 {
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.5)), url("image/banner/banner23a.jpg");
+        width: 30%;
+    }
+    #banner3 .banner-box2 {
+        background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url("image/banner/banner22a.jpg");
+        width: 30%;
+    }
+    #banner3 .banner-box3 {
+        background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), url("image/banner/banner19a.jpg");
+        width: 30%;
+        background-position: center;
+    }
+    #banner3 h2 {
+        display: none;
+    }
+    #banner3 h3 {
+        color: var(--white);
+        font-weight: 600;
+        font-size: 35px;
+    }
+    #newsletter .form {
+        width: 70%;
+    }
+    footer {
+        padding: 40px 40px;
     }
 }
