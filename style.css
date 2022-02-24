@@ -1,3 +1,5 @@
+/*-COLOR PALETTE-*/
+
 :root {
     --black: #222;
     --white: #ffffff;
@@ -22,6 +24,7 @@
     --crimson: #d44443;
     --brown: #800000;
     --blue: #1167b1;
+    --slategray: #2f4f4f;
 }
 
 * {
