@@ -1,9 +1,10 @@
-/*-COLOR PALETTE-*/
+/*--------------------------------COLOR PALETTE-----------------------------------------------------------*/
 
 :root {
-    --black: #222;
+    --black: #00040d;
     --white: #ffffff;
     --red: #de1e23;
+    --coralred: #ff4040;
     --green: #3aa335;
     --midnightblue: #191970;
     --magenta: #ff00ff;
@@ -25,6 +26,7 @@
     --brown: #800000;
     --blue: #1167b1;
     --slategray: #2f4f4f;
+    --jadegreen: #00a36c;
 }
 
 * {
@@ -106,7 +108,7 @@ body {
 }
 
 
-/* Header section*/
+/*-------------------------------------------- Header section---------------------------------------------------*/
 
 .logo {
     width: 10em;
@@ -174,7 +176,7 @@ body {
 }
 
 
-/* MAIN SECTION */
+/*-------------------------------------------------MAIN SECTION------------------------------------------------- */
 
 #main {
     background-image: url("image/cover.jpg");
@@ -215,8 +217,7 @@ body {
 }
 
 
-/*FEATURE SECTION*/
-
+/*-----------------------------------------------------FEATURE SECTION-------------------------------------------*/
 #feature {
     display: flex;
     align-items: center;
@@ -317,7 +318,7 @@ body {
 }
 
 
-/*FEATURED PRODUCTS SECTION*/
+/*-------------------------------------------FEATURED PRODUCTS SECTION--------------------------------------------*/
 
 .section-p1 {
     text-align: center;
@@ -395,7 +396,7 @@ body {
 }
 
 
-/*Call to Action Section*/
+/*------------------------------------------Call to Action Section------------------------------------------------*/
 
 #banner {
     display: flex;
@@ -451,7 +452,7 @@ button.banner-btn {
 }
 
 
-/*Call to Action Banners*/
+/*-----------------------------------------Call to Action Banners------------------------------------------------*/
 
 #sm-banner {
     display: flex;
@@ -502,7 +503,7 @@ button.banner-btn {
 }
 
 
-/*Text Banner Section */
+/*--------------------------------------------Text Banner Section---------------------------------------------- */
 
 #banner3 {
     display: flex;
@@ -572,7 +573,7 @@ button.banner-btn {
 }
 
 
-/*NewsLetter Section*/
+/*--------------------------------------------NewsLetter Section-------------------------------------------------*/
 
 #newsletter {
     display: flex;
@@ -624,7 +625,7 @@ button.banner-btn {
 }
 
 
-/*--Footer Section--*/
+/*------------------------------------------------Footer Section-------------------------------------------------*/
 
 footer {
     padding: 40px 40px;
@@ -702,7 +703,7 @@ footer .copyright {
 }
 
 
-/*SHOP PAGE */
+/*-----------------------------------------------------SHOP PAGE SECTION---------------------------------------- */
 
 #page-header {
     background-image: url("image/banner/b1.jpg");
@@ -740,11 +741,26 @@ footer .copyright {
 }
 
 
-/* SINGLE PRODUCT PAGE*/
+/*---------------------------------------SINGLE PRODUCT PAGE SECTION----------------------------------------------*/
 
-#prodetails .single-product-image {
+#product-details {
+    display: flex;
+    margin-top: 10px;
+    height: 90vh;
+}
+
+#product-details .single-product-image {
     width: 40%;
     margin-right: 50px;
+    margin-left: 20px;
+    display: block;
+    height: 600px;
+}
+
+#product-details .single-product-image #mainImage {
+    border-radius: 8px;
+    display: block;
+    height: 90%;
 }
 
 .small-image-group {
@@ -757,8 +773,103 @@ footer .copyright {
     cursor: pointer;
 }
 
+#product-details .single-product-details {
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
 
-/*START MEDIA QUERY FOR Ipad screen size*/
+#product-details .single-product-details h4 {
+    padding: 20px 0px 20px 0;
+}
+
+#product-details .single-product-details h6 {
+    font-size: 16px;
+}
+
+#product-details .single-product-details h6 a {
+    text-decoration: none;
+}
+
+#product-details .single-product-details h6 a:hover {
+    text-decoration: underline;
+    color: var(--persiangreen);
+}
+
+#product-details .single-product-details .star {
+    padding: 20px 0 0 0;
+}
+
+#product-details .single-product-details .star i {
+    font-size: 20px;
+    color: var(--star);
+}
+
+#product-details .single-product-details .star a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#product-details .single-product-details .star a:hover {
+    text-decoration: underline;
+    color: var(--persiangreen);
+}
+
+#product-details .single-product-details h2 {
+    padding: 10px 0 10px 0;
+    font-size: 26px;
+}
+
+#product-details .single-product-details select {
+    display: block;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#product-details .single-product-details input {
+    width: 50px;
+    height: 47px;
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#product-details .single-product-details input:focus {
+    outline: none;
+}
+
+#product-details .single-product-details button {
+    background-color: var(--persiangreen);
+    border: none;
+    color: var(--white);
+}
+
+#product-details .single-product-details span {
+    line-height: 25px;
+}
+
+
+/*----------------------------------------------BLOG PAGE SECTION------------------------------------------------*/
+page-header .blogHeader {
+    background-image: url("image/banner/b19.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+/*------------------------------------------RESPONSIVE SECTION--------------------------------------------------*/
+
+
+/*---------------------------------START MEDIA QUERY FOR Ipad screen size---------------------------------------*/
 
 @media (max-width: 768px) {
     .section-p1 {
@@ -807,7 +918,7 @@ footer .copyright {
     #bag {
         display: none;
     }
-    /* MAIN BANNER SECTION */
+    /*--------------------------------------MAIN BANNER SECTION-------------------------------------------------*/
     #main {
         height: 50vh;
         padding: 0px 40px;
@@ -877,20 +988,31 @@ footer .copyright {
     footer {
         padding: 40px 40px;
     }
+    /*--------------------------------------PRODUCT IMAGE AND DETAILS SECTION-------------------------------------*/
+    #product-details {
+        display: flex;
+        margin-top: 20px;
+        height: auto;
+    }
+    #product-details .single-product-image {
+        width: 40%;
+        margin: 55px 20px auto 20px;
+        height: 380px;
+    }
 }
 
 
-/* MEDIA QUERY FOR PHONE SCREEN SIZE*/
+/*------------------------------------------MEDIA QUERY FOR PHONE SCREEN SIZE-------------------------------------*/
 
 @media (max-width: 477px) {
     .section-p1 {
         padding: 20px 20px;
     }
-    /* HEADER AND NAVBAR SECTION */
+    /*-----------------------------------------HEADER AND NAVBAR SECTION------------------------------------------*/
     #header {
         padding: 10px 30px;
     }
-    /* MAIN BANNER SECTION */
+    /*--------------------------------------------MAIN BANNER SECTION--------------------------------------------*/
     #main {
         padding: 0 20px;
         background-position: 55%;
@@ -970,5 +1092,20 @@ footer .copyright {
     }
     #newsletter .form {
         width: 100%;
+    }
+    /*-------------------------------------PRODUCT IMAGE AND DETAILS SECTION--------------------------------------*/
+    #product-details {
+        display: flex;
+        flex-direction: column;
+    }
+    #product-details .single-product-image {
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        height: 300px;
+    }
+    #product-details .single-product-details {
+        width: 100%;
+        margin-top: 40px;
     }
 }
