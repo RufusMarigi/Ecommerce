@@ -982,7 +982,12 @@ hr.blogHr {
 /*------------------------------------------ABOUT US PAGE--------------------------------------------------*/
 
 #page-header.about-header {
-    background-image: url("image/about/banner.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/about/banner.jpg");
+    background-position: 20% 30%;
+}
+
+#page-header.about-header h2 {
+    color: (var--persiangreen);
 }
 
 #about-main {
