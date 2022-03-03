@@ -979,6 +979,39 @@ hr.blogHr {
 }
 
 
+/*------------------------------------------ABOUT US PAGE--------------------------------------------------*/
+
+#page-header.about-header {
+    background-image: url("image/about/banner.png");
+}
+
+#about-main {
+    display: flex;
+    align-items: center;
+}
+
+#about-main img {
+    width: 50%;
+    height: auto;
+}
+
+#about-main div {
+    padding-left: 40px;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
 /*------------------------------------------RESPONSIVE SECTION--------------------------------------------------*/
 
 
@@ -1101,7 +1134,7 @@ hr.blogHr {
     footer {
         padding: 40px 40px;
     }
-    /*--------------------------------------PRODUCT IMAGE AND DETAILS SECTION-------------------------------------*/
+    /*--------------------------------------PRODUCT IMAGE AND DETAILS SECTION IPAD SIZE-------------------------*/
     #product-details {
         display: flex;
         margin-top: 20px;
