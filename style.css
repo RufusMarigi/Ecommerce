@@ -894,12 +894,18 @@ footer .copyright {
     width: 100%;
     position: relative;
     padding-bottom: 90px;
+    transition: 0.3s ease;
 }
 
 #blog .blog-box:hover h4 {
     font-size: 38px;
     font-weight: 800;
     color: var(--jadegreen);
+}
+
+#blog .blog-box:hover hr.blogHr {
+    border-top: 1px solid var(--jadegreen);
+    border-bottom: 1px solid var(--jadegreen);
 }
 
 #blog .blog-image {
@@ -911,6 +917,7 @@ footer .copyright {
     width: 100%;
     height: 390px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 #blog .blog-details {
@@ -919,10 +926,17 @@ footer .copyright {
 
 #blog .blog-details h4 {
     color: var(--black);
+    transition: 0.3s ease;
 }
 
 #blog .blog-details p {
     color: var(--black);
+}
+
+hr.blogHr {
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    transition: 0.3s ease;
 }
 
 #blog .blog-details a {
