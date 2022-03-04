@@ -1017,6 +1017,15 @@ hr.blogHr {
 }
 
 
+/*------------------------------------------ABOUT US PAGE--------------------------------------------------*/
+
+#page-header.contact-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("image/banner/contactBanner.jpg");
+    background-position: 20% 14%;
+    background-repeat: no-repeat;
+}
+
+
 /*------------------------------------------RESPONSIVE SECTION--------------------------------------------------*/
 
 
