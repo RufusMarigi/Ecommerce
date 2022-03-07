@@ -1078,52 +1078,63 @@ hr.blogHr {
     border-radius: 20px;
 }
 
-.modal-form {
-    width: 90%;
-    height: 90%;
+#form-details {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 50px 0;
+    border: 1px solid var(--grey);
 }
 
-.modal-form h1 {
+#form-details .modal-form {
+    padding: 30px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details .modal-form h1 {
     text-align: center;
-    width: 80%;
+    margin-bottom: 2px;
+}
+
+.modal-form P {
+    font-size: 30px;
+    color: var(--black);
+    margin-top: 2px;
     margin-bottom: 20px;
 }
 
 .modal-form .love {
     outline: none;
     color: var(--black);
-    font-size: 70px;
     transition: 0.3s ease;
 }
 
 .modal-form:hover .love {
     color: var(--red);
-    box-shadow: 0px 100px 500px 80px var(--red);
+    /*box-shadow: 0px 100px 500px 80px var(--red);*/
     text-shadow: 0 0 5px var(--red);
-    font-size: 90px;
 }
 
 .form-validation {
     margin-bottom: 1.5rem;
-    width: 80%;
+    width: 100%;
 }
 
 .form-validation.error {
     margin-bottom: 1.5rem;
     position: relative;
     border: 1px solid var(--errorcolor);
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .form-validation.valid {
     margin-bottom: 0.5rem;
     position: relative;
-    border: 1px solid var(--brightest);
-    border-radius: 2px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
 }
 
 .form-validation p {
@@ -1139,37 +1150,41 @@ hr.blogHr {
     display: block;
 }
 
-.modal-input {
-    display: block;
-    padding-left: 0.5rem;
-    outline: none;
-    border-radius: 3px;
-    border: none;
-    height: 2rem;
+.modal-input,
+.modal-form .form-validation textarea {
     width: 100%;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.5px solid var(--grey);
+    /*box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);*/
 }
 
 .modal-input::placeholder {
-    color: var(--lightgrey);
-    font-size: 0.9rem;
-}
-
-.modal-input-button {
-    width: 80%;
-    height: 2rem;
-    border-radius: 2px;
-    background-color: var(--brightest);
-    outline: none;
-    border: none;
-    color: var(--white);
+    color: var(--greenwich);
     font-size: 1rem;
 }
 
-.modal-input-button:hover {
+.modal-input-button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: var(--white);
+    background-color: var(--jadegreen);
+    border: 1px solid transparent;
+    border-radius: 8px;
     cursor: pointer;
-    background-color: var(--cherry);
-    transition: all 0.4s ease-out;
+    bottom: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.modal-input-button:hover {
+    color: var(--jadegreen);
+    background-color: var(--white);
+    border: 1px solid var(--jadegreen);
 }
 
 .modal-input-login {
@@ -1184,6 +1199,57 @@ hr.blogHr {
     text-decoration: none;
     color: var(--brightest);
     font-weight: 600;
+}
+
+#form-details .people {
+    padding: 70px;
+}
+
+.people img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.people div p {
+    color: var(--black);
+    font-size: 18px;
+}
+
+.people .lead {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.people div .role {
+    color: var(--black);
+    margin: 0;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.people div p span {
+    display: block;
+    font-size: 16px;
+}
+
+.people div p .tel {
+    display: inline;
+    color: var(--greenwich);
+}
+
+.people div p a {
+    text-decoration: none;
+    color: var(--greenwich);
 }
 
 
