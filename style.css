@@ -1032,6 +1032,11 @@ hr.blogHr {
 
 /*---------------------------------------------CONTACT PAGE------------------------------------------------*/
 
+.formTitle {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
 .contactDetails {
     width: 50%;
     align-items: center;
@@ -1044,7 +1049,8 @@ hr.blogHr {
 
 .contactDetails h2 {
     line-height: 35px;
-    padding: 30px 0;
+    padding-bottom: 30px;
+    padding-top: 1px;
 }
 
 .contactDetails h3 {
@@ -1067,6 +1073,7 @@ hr.blogHr {
 .contactDetails dd {
     margin: 0;
     font-size: 20px;
+    text-align: left;
 }
 
 #map h2 {
@@ -1094,9 +1101,10 @@ hr.blogHr {
     align-items: flex-start;
 }
 
-#form-details .modal-form h1 {
+#form-details .modal-form h3 {
     text-align: center;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
+    font-size: 27px;
 }
 
 .modal-form P {
@@ -1202,7 +1210,7 @@ hr.blogHr {
 }
 
 #form-details .people {
-    padding: 70px;
+    padding: 70px 30px 30px 10px;
 }
 
 .people img {
@@ -1222,24 +1230,24 @@ hr.blogHr {
 
 .people div p {
     color: var(--black);
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .people .lead {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .people div .role {
     color: var(--black);
     margin: 0;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 25px;
 }
 
 .people div p span {
     display: block;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .people div p .tel {
@@ -1397,6 +1405,34 @@ hr.blogHr {
     #page-header.about-header {
         background-position: 20% 0%;
     }
+    /*---------------------------------------------CONTACT PAGE IPAD SIZE---------------------------------------*/
+    #about-main {
+        padding: 10px 10px;
+    }
+    #about-main div {
+        padding-left: 5px;
+    }
+    .contactDetails dt {
+        padding: 0 10px 0 10px;
+    }
+    .contactDetails dd {
+        padding-left: 5px;
+        text-align: left;
+    }
+    #map iframe {
+        width: 90%;
+        border-radius: 20px;
+    }
+    #form-details {
+        padding: 10px;
+    }
+    #form-details .modal-form {
+        padding: 10px;
+        width: 50%;
+    }
+    #form-details .people {
+        padding: 10px 10px 10px 10px;
+    }
 }
 
 
@@ -1542,5 +1578,28 @@ hr.blogHr {
     }
     #about-app .video {
         width: 100%;
+    }
+    /*---------------------------------------------CONTACT PAGE PHONE SIZE---------------------------------------*/
+    #about-main {
+        flex-direction: column;
+    }
+    #about-main img {
+        padding-top: 5px;
+    }
+    .contactDetails {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #map iframe {
+        width: 100%;
+    }
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+    #form-details .modal-form {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
