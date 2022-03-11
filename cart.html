@@ -7,37 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Africa Royal E-market</title>
-    <!--FONT AWESOME LINK -->
+    <!----------------------------FONT AWESOME LINK ------------------------------------------------------------->
     <!--<script src="https://kit.fontawesome.com/0ecbb45943.js" crossorigin="anonymous"></script>-->
 
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
 
-    <!--Stylesheet Link-->
+    <!----------------------------------------------Stylesheet Link------------------------------------------------>
     <link rel="stylesheet" href="style.css" />
-    <!--Nunito Font Link from Google Fonts-->
+    <!----------------------------------Nunito Font Link from Google Fonts------------------------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-    <!--Merienda Font Link from Google Fonts-->
+    <!---------------------------Merienda Font Link from Google Fonts---------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Nunito&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <!--HEADER SECTION-->
+    <!-------------------------------------HEADER SECTION--------------------------------------------------------->
     <header id="header">
         <a href="index.html"><img src="image\logo.jpg" alt="logo" class="logo" />
         </a>
 
         <ul class="navbar" id="navbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html" class="active">shop</a></li>
+            <li><a href="shop.html">shop</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li id="bag">
-                <a href="cart.html"><i class="fi-xwluxl-shopping-bag-wide"></i></a>
+                <a href="cart.html" class="active"><i class="fi-xwluxl-shopping-bag-wide"></i
+          ></a>
             </li>
             <a href="#" id="close"><i class="fi-xwluxl-times-wide"></i></a>
         </ul>
@@ -47,148 +48,94 @@
         </div>
     </header>
 
-    <!--PRODUCT IMAGE AND DETAILS SECTION-->
-    <section id="product-details" class="">
-        <!--SINGLE PRODUCT IMAGE SECTION-->
-        <div class="single-product-image">
-            <img src="image/products/f1.jpg" alt="single product" width="100%" id="mainImage" />
+    <!------------------------------CART SECTION------------------------------------------------------------------->
+    <section class="section-p1" id="cart">
+        <table width="100%" border="0">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
 
-            <div class="small-image-group">
-                <div class="small-image-col">
-                    <img src="image/products/f1.jpg" alt="small image" width="100%" class="small-image" />
-                </div>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#"><i class="fi-cwluxl-times-wide"></i></a>
+                    </td>
 
-                <div class="small-image-col">
-                    <img src="image/products/f2.jpg" alt="small image" width="100%" class="small-image" />
-                </div>
+                    <td><img src="image/products/f1.jpg" /></td>
 
-                <div class="small-image-col">
-                    <img src="image/products/f3.jpg" alt="small image" width="100%" class="small-image" />
-                </div>
+                    <td>Men's Hawaiian shirt</td>
+                    <td>KSh&nbsp;78</td>
+                    <td><input type="number" value="1" /></td>
+                    <td>KSh&nbsp;78</td>
+                </tr>
 
-                <div class="small-image-col">
-                    <img src="image/products/f4.jpg" alt="small image" width="100%" class="small-image" />
-                </div>
-            </div>
-        </div>
+                <tr>
+                    <td>
+                        <a href="#"><i class="fi-cwluxl-times-wide"></i></a>
+                    </td>
 
-        <!--SINGLE PRODUCT DETAILS SECTION-->
-        <div class="single-product-details">
-            <h4>Men's Hawaiian shirt</h4>
-            <h6>
-                <strong>Brand:</strong> Adidas &boxv;<a href="#">Similar products from Adidas</a
-          >
-        </h6>
-        <div class="star">
-          <i class="fi-xnsrxl-star-solid"></i>
-          <i class="fi-xnsrxl-star-solid"></i>
-          <i class="fi-xnsrxl-star-solid"></i> &nbsp; &horbar; &nbsp;
-          <a href="#">3 verified ratings</a>
-        </div>
-        <h2>KSh&nbsp;78</h2>
-        <select>
-          <option>Select Size</option>
-          <option>XXL</option>
-          <option>XL</option>
-          <option>Large</option>
-          <option>Medium</option>
-          <option>Small</option>
-        </select>
-        <input type="number" value="1" />
-        <button class="normal">Add to cart</button>
-        <h4>Product Details</h4>
-        <span>For many people it's just a t-shirt. For you it's a responsibility.
-          This adidas t-shirt connects you to your sport even when you're away
-          from the stadium. Because with your mind always on the game, are you
-          ever truly away from the stadium</span
-        >
-      </div>
+                    <td><img src="image/products/f2.jpg" /></td>
+
+                    <td>Men's Hawaiian shirt</td>
+                    <td>KSh&nbsp;78</td>
+                    <td><input type="number" value="1" /></td>
+                    <td>KSh&nbsp;78</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="#"><i class="fi-cwluxl-times-wide"></i></a>
+                    </td>
+
+                    <td><img src="image/products/f3.jpg" /></td>
+
+                    <td>Men's Hawaiian shirt</td>
+                    <td>KSh&nbsp;78</td>
+                    <td><input type="number" value="1" /></td>
+                    <td>KSh&nbsp;78</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <!--Featured products Section-->
-    <section class="section-p1" id="newArrival1">
-      <h2>Featured products</h2>
-      <p>Straight from the designers table, be the first in trends&#33;</p>
-      <div class="product-container">
-        <div class="product">
-          <img src="image/products/n5.jpg" alt="product one" />
-          <div class="description">
-            <span>adidas</span>
-        <h5>Midnight flower hawaiian shirt</h5>
-        <div class="star">
-            <i class="fi-xnsrxl-star-solid"></i>
-            <i class="fi-xnsrxl-star-solid"></i>
-            <i class="fi-xnsrxl-star-solid"></i>
-            <i class="fi-xnsrxl-star-solid"></i>
-            <i class="fi-xnsrxl-star-solid"></i>
-        </div>
-        <h4>KSh&nbsp;78</h4>
-        </div>
-        <a href="#">
-            <i class="fi-xnluhl-shopping-cart cart"></i>
-        </a>
+    <!-----------------------------------------CART ADD Section----------------------------------------------------->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon" />
+                <button class="modal-input-button" type="submit">Apply</button>
+            </div>
         </div>
 
-        <div class="product">
-            <img src="image/products/n6.jpg" alt="product one" />
-            <div class="description">
-                <span>adidas</span>
-                <h5>Brown and blue artist shirt</h5>
-                <div class="star">
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                </div>
-                <h4>KSh&nbsp;78</h4>
-            </div>
-            <a href="#">
-                <i class="fi-xnluhl-shopping-cart cart"></i>
-            </a>
-        </div>
-
-        <div class="product">
-            <img src="image/products/n7.jpg" alt="product one" />
-            <div class="description">
-                <span>adidas</span>
-                <h5>Uncle length floral pants</h5>
-                <div class="star">
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                </div>
-                <h4>KSh&nbsp;78</h4>
-            </div>
-            <a href="#">
-                <i class="fi-xnluhl-shopping-cart cart"></i>
-            </a>
-        </div>
-
-        <div class="product">
-            <img src="image/products/n8.jpg" alt="product one" />
-            <div class="description">
-                <span>adidas</span>
-                <h5>Kitty print comfy top</h5>
-                <div class="star">
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                    <i class="fi-xnsrxl-star-solid"></i>
-                </div>
-                <h4>KSh&nbsp;78</h4>
-            </div>
-            <a href="#">
-                <i class="fi-xnluhl-shopping-cart cart"></i>
-            </a>
-        </div>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>KSh&nbsp;234</td>
+                </tr>
+                <tr>
+                    <td>Shipping Fee</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>KSh&nbsp;234</strong></td>
+                </tr>
+            </table>
+            <button class="modal-input-button">Proceed to Checkout</button>
         </div>
     </section>
 
-    <!--NewsLetter Section-->
+    <!---------------------------------------NewsLetter Section--------------------------------------------------->
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign up for Newsletters</h4>
@@ -203,8 +150,7 @@
             <button type="submit" class="normal">Sign Up</button>
         </div>
     </section>
-
-    <!--Footer Section-->
+    <!-----------------------------------------Footer Section----------------------------------------------------->
     <footer>
         <!--Footer Contact us section-->
         <div class="col">
@@ -216,8 +162,7 @@
           ><span class="tel">+254 792-839-938</span>
         </p>
         <p>
-          <strong>Hours: &nbsp </strong>
-                <time datetime="05:00">5:00am</time> to
+          <strong>Hours: &nbsp </strong> <time datetime="05:00">5:00am</time> to
                 <time datetime="23:00">11:00pm</time>, Monday - Saturday.
             </p>
 
@@ -286,9 +231,7 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
-
-    <!--JAVASCRIPT Link-->
+    <!-----------------------------------------JAVASCRIPT Link--------------------------------------------------->
     <script src="script.js"></script>
   </body>
 </html>
