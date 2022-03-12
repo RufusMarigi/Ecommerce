@@ -1,2 +1,2 @@
-# Ecommerce
- Ecommerce website.
+# e-commerce
+ e-commerce website.
